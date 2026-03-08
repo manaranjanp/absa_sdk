@@ -6,7 +6,9 @@ Supports any LLM provider via LiteLLM (OpenAI, Anthropic, Google, Grok, etc.).
 """
 
 import json
+import os
 import asyncio
+from datetime import datetime
 from typing import Optional
 
 from google.adk.agents import SequentialAgent
@@ -23,8 +25,16 @@ from agents import (
     create_response_generation_agent,
     create_output_guardrail_agent,
 )
-from pipeline.callbacks import check_toxicity_before_agent, write_human_review_after_guardrail
+from pipeline.callbacks import (
+    check_toxicity_before_agent,
+    write_human_review_after_guardrail,
+)
 
+
+# Path to the pipeline results log file
+RESULTS_LOG_FILE = os.path.join(
+    os.path.dirname(__file__), "..", "data", "pipeline_results.log"
+)
 
 # Stage names for console logging
 STAGE_NAMES = [
@@ -128,7 +138,9 @@ async def run_pipeline(
     # Run the pipeline
     user_message = types.Content(
         role="user",
-        parts=[types.Part(text=f"Process this review:\n{json.dumps(review, indent=2)}")],
+        parts=[
+            types.Part(text=f"Process this review:\n{json.dumps(review, indent=2)}")
+        ],
     )
 
     results = {}
@@ -165,6 +177,7 @@ async def run_pipeline(
 
     pipeline_output = {
         "review_id": review_id,
+        "review_text": review.get("review_text", ""),
         "toxicity_result": _safe_parse(state.get("toxicity_result", "{}")),
         "aspect_result": _safe_parse(state.get("aspect_result", "{}")),
         "sentiment_result": _safe_parse(state.get("sentiment_result", "{}")),
@@ -208,53 +221,63 @@ def _safe_parse(text: str):
 
 
 def _print_summary(output: dict):
-    """Print a concise pipeline execution summary."""
-    print(f"\n{'─'*60}")
-    print(f"  Pipeline Summary for {output['review_id']}")
-    print(f"{'─'*60}")
+    """Print a concise pipeline execution summary and write it to the results log."""
+    lines = []
+    lines.append(f"  Review ID:   {output['review_id']}")
+    lines.append(f"  Timestamp:   {datetime.utcnow().isoformat()}")
+    lines.append(f"  Review:      {output.get('review_text', '')}")
 
     # Toxicity
     tox = output.get("toxicity_result", {})
     is_toxic = tox.get("is_toxic", False)
     tox_score = tox.get("toxicity_score", "N/A")
     status = "TOXIC — Pipeline terminated" if is_toxic else "Clean"
-    print(f"  Toxicity:    {status} (score: {tox_score})")
+    lines.append(f"  Toxicity:    {status} (score: {tox_score})")
 
-    if is_toxic:
-        print(f"{'─'*60}\n")
-        return
+    if not is_toxic:
+        # Aspects
+        aspects = output.get("aspect_result", {})
+        aspect_list = aspects.get("aspects", [])
+        codes = [a.get("aspect_code", "?") for a in aspect_list]
+        lines.append(f"  Aspects:     {', '.join(codes) if codes else 'None extracted'}")
 
-    # Aspects
-    aspects = output.get("aspect_result", {})
-    aspect_list = aspects.get("aspects", [])
-    codes = [a.get("aspect_code", "?") for a in aspect_list]
-    print(f"  Aspects:     {', '.join(codes) if codes else 'None extracted'}")
+        # Sentiments
+        sents = output.get("sentiment_result", {})
+        overall = sents.get("overall_sentiment", "N/A")
+        overall_score = sents.get("overall_sentiment_score", "N/A")
+        lines.append(f"  Overall:     {overall} (score: {overall_score})")
 
-    # Sentiments
-    sents = output.get("sentiment_result", {})
-    overall = sents.get("overall_sentiment", "N/A")
-    overall_score = sents.get("overall_sentiment_score", "N/A")
-    print(f"  Overall:     {overall} (score: {overall_score})")
+        # Escalation
+        esc = output.get("escalation_result", {})
+        ticket = esc.get("escalation_ticket")
+        if ticket:
+            lines.append(f"  Escalation:  {ticket.get('priority', '?')} priority, {ticket.get('sla_hours', '?')}h SLA")
+        else:
+            lines.append(f"  Escalation:  No ticket created")
 
-    # Escalation
-    esc = output.get("escalation_result", {})
-    ticket = esc.get("escalation_ticket")
-    if ticket:
-        print(f"  Escalation:  Ticket #{ticket.get('ticket_id', '?')} — {ticket.get('priority', '?')} priority")
-    else:
-        print(f"  Escalation:  No ticket created")
+        # Guardrail
+        guard = output.get("guardrail_result", {})
+        passed = guard.get("guardrail_passed", "N/A")
+        g_action = guard.get("guardrail_action", "N/A")
+        lines.append(f"  Guardrail:   {'PASSED' if passed else 'FAILED'} → {g_action}")
 
-    # Guardrail
-    guard = output.get("guardrail_result", {})
-    passed = guard.get("guardrail_passed", "N/A")
-    g_action = guard.get("guardrail_action", "N/A")
-    print(f"  Guardrail:   {'PASSED' if passed else 'FAILED'} → {g_action}")
+        # Response — full text, not truncated
+        resp = output.get("response_result", {})
+        response_text = resp.get("response_text", "")
+        if response_text:
+            lines.append(f"  Response:    {response_text}")
 
-    # Response preview
-    resp = output.get("response_result", {})
-    response_text = resp.get("response_text", "")
-    if response_text:
-        preview = response_text[:120] + "..." if len(response_text) > 120 else response_text
-        print(f"  Response:    {preview}")
+    # Print to console
+    separator = f"{'─'*60}"
+    print(f"\n{separator}")
+    for line in lines:
+        print(line)
+    print(f"{separator}\n")
 
-    print(f"{'─'*60}\n")
+    # Write to file
+    os.makedirs(os.path.dirname(RESULTS_LOG_FILE), exist_ok=True)
+    with open(RESULTS_LOG_FILE, "a") as f:
+        f.write(separator + "\n")
+        for line in lines:
+            f.write(line + "\n")
+        f.write(separator + "\n\n")

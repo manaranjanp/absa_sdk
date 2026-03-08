@@ -21,3 +21,4 @@ Thumbs.db
 .claude/
 data/escalation_tickets.json
 data/human_review_queue.json
+data/pipeline_results.log
