@@ -1,552 +1,222 @@
 [
   {
     "review_id": "REV-001",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-501",
-    "customer_name": "Sarah Mitchell",
-    "customer_tier": "Platinum",
-    "review_text": "Absolutely loved the grilled salmon — perfectly cooked and beautifully plated. The waiter, James, was attentive and made great wine recommendations. The ambiance was cozy with perfect lighting for our anniversary dinner. Will definitely be back!",
-    "review_timestamp": "2026-02-28T19:30:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "Absolutely loved the grilled salmon \u2014 perfectly cooked and beautifully plated. The waiter, James, was attentive and made great wine recommendations. The ambiance was cozy with perfect lighting for our anniversary dinner. Will definitely be back!"
   },
   {
     "review_id": "REV-002",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-502",
-    "customer_name": "David Chen",
-    "customer_tier": "Gold",
-    "review_text": "The pasta was bland and overcooked. I waited 45 minutes for my entree and the server never checked on us once. Very disappointing for the price point.",
-    "review_timestamp": "2026-02-28T20:15:00Z",
-    "source_platform": "yelp"
+    "review_text": "The pasta was bland and overcooked. I waited 45 minutes for my entree and the server never checked on us once. Very disappointing for the price point."
   },
   {
     "review_id": "REV-003",
-    "restaurant_id": "REST-1055",
-    "customer_id": "CUST-503",
-    "customer_name": "Maria Rodriguez",
-    "customer_tier": "Standard",
-    "review_text": "Food was okay, nothing special. The chicken was a bit dry but the sides were tasty. Service was average — not bad but not memorable either.",
-    "review_timestamp": "2026-02-27T12:45:00Z",
-    "source_platform": "tripadvisor"
+    "review_text": "Food was okay, nothing special. The chicken was a bit dry but the sides were tasty. Service was average \u2014 not bad but not memorable either."
   },
   {
     "review_id": "REV-004",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-504",
-    "customer_name": "James O'Brien",
-    "customer_tier": "Silver",
-    "review_text": "This place is absolute garbage. The food was disgusting and the staff are incompetent morons who shouldn't be allowed near a restaurant. Complete waste of money, I hope this dump gets shut down.",
-    "review_timestamp": "2026-02-27T21:00:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "This place is absolute garbage. The food was disgusting and the staff are incompetent morons who shouldn't be allowed near a restaurant. Complete waste of money, I hope this dump gets shut down."
   },
   {
     "review_id": "REV-005",
-    "restaurant_id": "REST-1055",
-    "customer_id": "CUST-505",
-    "customer_name": "Emily Watson",
-    "customer_tier": "Platinum",
-    "review_text": "The steak was phenomenal — best I've had in years. However, the restroom was filthy and there was a sticky residue on our table. For a restaurant at this price point, cleanliness should be a given.",
-    "review_timestamp": "2026-02-26T19:00:00Z",
-    "source_platform": "yelp"
+    "review_text": "The steak was phenomenal \u2014 best I've had in years. However, the restroom was filthy and there was a sticky residue on our table. For a restaurant at this price point, cleanliness should be a given."
   },
   {
     "review_id": "REV-006",
-    "restaurant_id": "REST-1078",
-    "customer_id": "CUST-506",
-    "customer_name": "Robert Kim",
-    "customer_tier": "Standard",
-    "review_text": "Went for lunch with colleagues. The noise level was unbearable — we couldn't hear each other talk. Food came out cold. The only positive was the quick service, but that doesn't help when the food is inedible.",
-    "review_timestamp": "2026-02-26T13:30:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "Went for lunch with colleagues. The noise level was unbearable \u2014 we couldn't hear each other talk. Food came out cold. The only positive was the quick service, but that doesn't help when the food is inedible."
   },
   {
     "review_id": "REV-007",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-507",
-    "customer_name": "Lisa Thompson",
-    "customer_tier": "Gold",
-    "review_text": "Everything was perfect! From the moment we walked in, the hostess was welcoming. The seafood platter was fresh and generous. Beautiful decor and live music made the evening special. 10/10 would recommend.",
-    "review_timestamp": "2026-02-25T20:00:00Z",
-    "source_platform": "tripadvisor"
+    "review_text": "Everything was perfect! From the moment we walked in, the hostess was welcoming. The seafood platter was fresh and generous. Beautiful decor and live music made the evening special. 10/10 would recommend."
   },
   {
     "review_id": "REV-008",
-    "restaurant_id": "REST-1055",
-    "customer_id": "CUST-508",
-    "customer_name": "Michael Brown",
-    "customer_tier": "Standard",
-    "review_text": "Would have been a great meal if it weren't served ice cold. The risotto had potential but was clearly sitting under the heat lamp too long. Dessert partially redeemed the experience — the tiramisu was excellent.",
-    "review_timestamp": "2026-02-25T19:45:00Z",
-    "source_platform": "yelp"
+    "review_text": "Would have been a great meal if it weren't served ice cold. The risotto had potential but was clearly sitting under the heat lamp too long. Dessert partially redeemed the experience \u2014 the tiramisu was excellent."
   },
   {
     "review_id": "REV-009",
-    "restaurant_id": "REST-1078",
-    "customer_id": "CUST-509",
-    "customer_name": "Jennifer Davis",
-    "customer_tier": "Platinum",
-    "review_text": "The waiter spilled water on my lap and didn't even apologize properly. Manager came over eventually but seemed disinterested. Food was mediocre at best. This is not the level of service I expect.",
-    "review_timestamp": "2026-02-24T20:30:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "The waiter spilled water on my lap and didn't even apologize properly. Manager came over eventually but seemed disinterested. Food was mediocre at best. This is not the level of service I expect."
   },
   {
     "review_id": "REV-010",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-510",
-    "customer_name": "Andrew Wilson",
-    "customer_tier": "Silver",
-    "review_text": "Decent spot for a casual meal. The burger was juicy and well-seasoned. Fries were crispy. Nothing fancy but solid comfort food at a fair price.",
-    "review_timestamp": "2026-02-24T12:15:00Z",
-    "source_platform": "yelp"
+    "review_text": "Decent spot for a casual meal. The burger was juicy and well-seasoned. Fries were crispy. Nothing fancy but solid comfort food at a fair price."
   },
   {
     "review_id": "REV-011",
-    "restaurant_id": "REST-1055",
-    "customer_id": "CUST-511",
-    "customer_name": "Patricia Lee",
-    "customer_tier": "Gold",
-    "review_text": "I found a hair in my soup. When I told the server, she just shrugged and asked if I wanted a new one as if it was no big deal. Absolutely unacceptable hygiene standards.",
-    "review_timestamp": "2026-02-23T18:00:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "I found a hair in my soup. When I told the server, she just shrugged and asked if I wanted a new one as if it was no big deal. Absolutely unacceptable hygiene standards."
   },
   {
     "review_id": "REV-012",
-    "restaurant_id": "REST-1078",
-    "customer_id": "CUST-512",
-    "customer_name": "Thomas Garcia",
-    "customer_tier": "Standard",
-    "review_text": "The new seasonal menu is outstanding. Chef's special lobster ravioli was divine. Portions are generous and presentation is Instagram-worthy. My new favorite spot!",
-    "review_timestamp": "2026-02-23T20:00:00Z",
-    "source_platform": "tripadvisor"
+    "review_text": "The new seasonal menu is outstanding. Chef's special lobster ravioli was divine. Portions are generous and presentation is Instagram-worthy. My new favorite spot!"
   },
   {
     "review_id": "REV-013",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-513",
-    "customer_name": "Nancy Martinez",
-    "customer_tier": "Platinum",
-    "review_text": "Brought my family for Sunday brunch. Kids menu was limited and the high chair was broken. On the bright side, the eggs benedict was exceptional and the fresh orange juice was delightful.",
-    "review_timestamp": "2026-02-22T11:00:00Z",
-    "source_platform": "yelp"
+    "review_text": "Brought my family for Sunday brunch. Kids menu was limited and the high chair was broken. On the bright side, the eggs benedict was exceptional and the fresh orange juice was delightful."
   },
   {
     "review_id": "REV-014",
-    "restaurant_id": "REST-1055",
-    "customer_id": "CUST-514",
-    "customer_name": "Christopher Taylor",
-    "customer_tier": "Standard",
-    "review_text": "Terrible. Just terrible. Waited an hour for cold food, rude staff, and the place smelled weird. Never coming back.",
-    "review_timestamp": "2026-02-22T19:30:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "Terrible. Just terrible. Waited an hour for cold food, rude staff, and the place smelled weird. Never coming back."
   },
   {
     "review_id": "REV-015",
-    "restaurant_id": "REST-1078",
-    "customer_id": "CUST-515",
-    "customer_name": "Karen Anderson",
-    "customer_tier": "Gold",
-    "review_text": "The dim lighting created such a romantic atmosphere. Wine selection was impressive and the sommelier was incredibly knowledgeable. Food was good but not exceptional — the sauce on the duck was too salty.",
-    "review_timestamp": "2026-02-21T20:00:00Z",
-    "source_platform": "tripadvisor"
+    "review_text": "The dim lighting created such a romantic atmosphere. Wine selection was impressive and the sommelier was incredibly knowledgeable. Food was good but not exceptional \u2014 the sauce on the duck was too salty."
   },
   {
     "review_id": "REV-016",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-516",
-    "customer_name": "Daniel White",
-    "customer_tier": "Standard",
-    "review_text": "Great happy hour deals. $5 appetizers were a steal. Bartender was friendly and made excellent cocktails. Will be my new after-work spot.",
-    "review_timestamp": "2026-02-21T17:30:00Z",
-    "source_platform": "yelp"
+    "review_text": "Great happy hour deals. $5 appetizers were a steal. Bartender was friendly and made excellent cocktails. Will be my new after-work spot."
   },
   {
     "review_id": "REV-017",
-    "restaurant_id": "REST-1055",
-    "customer_id": "CUST-517",
-    "customer_name": "Amanda Jackson",
-    "customer_tier": "Silver",
-    "review_text": "The vegan options here are surprisingly good! The plant-based burger was flavorful and the sweet potato fries were perfect. Nice to see a restaurant taking dietary preferences seriously.",
-    "review_timestamp": "2026-02-20T13:00:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "The vegan options here are surprisingly good! The plant-based burger was flavorful and the sweet potato fries were perfect. Nice to see a restaurant taking dietary preferences seriously."
   },
   {
     "review_id": "REV-018",
-    "restaurant_id": "REST-1078",
-    "customer_id": "CUST-518",
-    "customer_name": "Steven Robinson",
-    "customer_tier": "Platinum",
-    "review_text": "I've been a loyal customer for years but quality has been declining steadily. Last three visits have been disappointing — portions shrinking, prices rising, and the magic is gone.",
-    "review_timestamp": "2026-02-20T19:00:00Z",
-    "source_platform": "yelp"
+    "review_text": "I've been a loyal customer for years but quality has been declining steadily. Last three visits have been disappointing \u2014 portions shrinking, prices rising, and the magic is gone."
   },
   {
     "review_id": "REV-019",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-519",
-    "customer_name": "Michelle Clark",
-    "customer_tier": "Gold",
-    "review_text": "Booked for a party of 8 and they lost our reservation. Had to wait 40 minutes for a table despite booking two weeks in advance. Once seated, the food was actually quite good, but the initial experience was frustrating.",
-    "review_timestamp": "2026-02-19T19:30:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "Booked for a party of 8 and they lost our reservation. Had to wait 40 minutes for a table despite booking two weeks in advance. Once seated, the food was actually quite good, but the initial experience was frustrating."
   },
   {
     "review_id": "REV-020",
-    "restaurant_id": "REST-1055",
-    "customer_id": "CUST-520",
-    "customer_name": "Kevin Harris",
-    "customer_tier": "Standard",
-    "review_text": "",
-    "review_timestamp": "2026-02-19T14:00:00Z",
-    "source_platform": "google_reviews"
+    "review_text": ""
   },
   {
     "review_id": "REV-021",
-    "restaurant_id": "REST-1078",
-    "customer_id": "CUST-521",
-    "customer_name": "Laura Nelson",
-    "customer_tier": "Silver",
-    "review_text": "The outdoor patio is gorgeous in spring. Loved the garden salad with house dressing. Staff were all smiles. A delightful lunch experience.",
-    "review_timestamp": "2026-02-18T12:30:00Z",
-    "source_platform": "tripadvisor"
+    "review_text": "The outdoor patio is gorgeous in spring. Loved the garden salad with house dressing. Staff were all smiles. A delightful lunch experience."
   },
   {
     "review_id": "REV-022",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-522",
-    "customer_name": "Brian Hall",
-    "customer_tier": "Platinum",
-    "review_text": "The sushi was not fresh — I could taste it immediately. For $45 per roll, I expect quality fish. The miso soup was lukewarm. Only the edamame was acceptable. Very disappointing.",
-    "review_timestamp": "2026-02-18T20:00:00Z",
-    "source_platform": "yelp"
+    "review_text": "The sushi was not fresh \u2014 I could taste it immediately. For $45 per roll, I expect quality fish. The miso soup was lukewarm. Only the edamame was acceptable. Very disappointing."
   },
   {
     "review_id": "REV-023",
-    "restaurant_id": "REST-1055",
-    "customer_id": "CUST-523",
-    "customer_name": "Sandra Young",
-    "customer_tier": "Standard",
-    "review_text": "Eh, it was fine. Nothing to write home about. Standard chain restaurant food. The breadsticks were warm and that was nice I guess.",
-    "review_timestamp": "2026-02-17T18:30:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "Eh, it was fine. Nothing to write home about. Standard chain restaurant food. The breadsticks were warm and that was nice I guess."
   },
   {
     "review_id": "REV-024",
-    "restaurant_id": "REST-1078",
-    "customer_id": "CUST-524",
-    "customer_name": "Mark Walker",
-    "customer_tier": "Gold",
-    "review_text": "f*** this place and everyone who works here. the food is s*** and the waitress was a total b****. NEVER AGAIN!!!",
-    "review_timestamp": "2026-02-17T22:00:00Z",
-    "source_platform": "yelp"
+    "review_text": "f*** this place and everyone who works here. the food is s*** and the waitress was a total b****. NEVER AGAIN!!!"
   },
   {
     "review_id": "REV-025",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-525",
-    "customer_name": "Diana King",
-    "customer_tier": "Silver",
-    "review_text": "The brunch buffet is incredible value. Unlimited mimosas, fresh pastries, made-to-order omelets, and a carving station. The Belgian waffles alone are worth the visit. Staff kept everything stocked and clean.",
-    "review_timestamp": "2026-02-16T10:30:00Z",
-    "source_platform": "tripadvisor"
+    "review_text": "The brunch buffet is incredible value. Unlimited mimosas, fresh pastries, made-to-order omelets, and a carving station. The Belgian waffles alone are worth the visit. Staff kept everything stocked and clean."
   },
   {
     "review_id": "REV-026",
-    "restaurant_id": "REST-1055",
-    "customer_id": "CUST-526",
-    "customer_name": "George Wright",
-    "customer_tier": "Platinum",
-    "review_text": "My steak was ordered medium-rare and came out well-done. Sent it back and the replacement was barely any better. The sides were good and the server was apologetic, so I appreciate the effort to make things right.",
-    "review_timestamp": "2026-02-16T19:30:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "My steak was ordered medium-rare and came out well-done. Sent it back and the replacement was barely any better. The sides were good and the server was apologetic, so I appreciate the effort to make things right."
   },
   {
     "review_id": "REV-027",
-    "restaurant_id": "REST-1078",
-    "customer_id": "CUST-527",
-    "customer_name": "Betty Lopez",
-    "customer_tier": "Standard",
-    "review_text": "Charming little place with character. The exposed brick and vintage decor give it such personality. The pasta was homemade and you could tell. Felt like eating at an Italian grandma's house.",
-    "review_timestamp": "2026-02-15T19:00:00Z",
-    "source_platform": "yelp"
+    "review_text": "Charming little place with character. The exposed brick and vintage decor give it such personality. The pasta was homemade and you could tell. Felt like eating at an Italian grandma's house."
   },
   {
     "review_id": "REV-028",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-528",
-    "customer_name": "Richard Hill",
-    "customer_tier": "Gold",
-    "review_text": "The restaurant needs serious attention to cleanliness. Crumbs on the seats, water stains on glasses, and the floor near the kitchen entrance was sticky. Food quality was decent though.",
-    "review_timestamp": "2026-02-15T13:00:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "The restaurant needs serious attention to cleanliness. Crumbs on the seats, water stains on glasses, and the floor near the kitchen entrance was sticky. Food quality was decent though."
   },
   {
     "review_id": "REV-029",
-    "restaurant_id": "REST-1055",
-    "customer_id": "CUST-529",
-    "customer_name": "Susan Scott",
-    "customer_tier": "Silver",
-    "review_text": "Celebrated my birthday here and the staff made it so special! They brought out a complimentary dessert with a candle and the whole section sang. The prime rib was cooked to perfection. Memorable evening!",
-    "review_timestamp": "2026-02-14T20:00:00Z",
-    "source_platform": "tripadvisor"
+    "review_text": "Celebrated my birthday here and the staff made it so special! They brought out a complimentary dessert with a candle and the whole section sang. The prime rib was cooked to perfection. Memorable evening!"
   },
   {
     "review_id": "REV-030",
-    "restaurant_id": "REST-1078",
-    "customer_id": "CUST-530",
-    "customer_name": "Jason Green",
-    "customer_tier": "Standard",
-    "review_text": "Ordered delivery. The food arrived an hour late and everything was cold and soggy. Fries were limp, burger bun was disintegrating. Total waste of $35. The delivery experience ruined what might have been decent food.",
-    "review_timestamp": "2026-02-14T20:30:00Z",
-    "source_platform": "yelp"
+    "review_text": "Ordered delivery. The food arrived an hour late and everything was cold and soggy. Fries were limp, burger bun was disintegrating. Total waste of $35. The delivery experience ruined what might have been decent food."
   },
   {
     "review_id": "REV-031",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-531",
-    "customer_name": "Carol Adams",
-    "customer_tier": "Platinum",
-    "review_text": "As someone with severe nut allergies, I was very impressed with how the staff handled my dietary needs. They checked every ingredient and the chef personally came out to discuss my order. The food was also delicious!",
-    "review_timestamp": "2026-02-13T19:00:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "As someone with severe nut allergies, I was very impressed with how the staff handled my dietary needs. They checked every ingredient and the chef personally came out to discuss my order. The food was also delicious!"
   },
   {
     "review_id": "REV-032",
-    "restaurant_id": "REST-1055",
-    "customer_id": "CUST-532",
-    "customer_name": "Anthony Baker",
-    "customer_tier": "Gold",
-    "review_text": "The music was so loud I couldn't have a conversation. Asked them to turn it down and they said it's their 'vibe.' Well, your 'vibe' cost you a customer. Food was fine but I couldn't enjoy it over the noise.",
-    "review_timestamp": "2026-02-13T20:30:00Z",
-    "source_platform": "yelp"
+    "review_text": "The music was so loud I couldn't have a conversation. Asked them to turn it down and they said it's their 'vibe.' Well, your 'vibe' cost you a customer. Food was fine but I couldn't enjoy it over the noise."
   },
   {
     "review_id": "REV-033",
-    "restaurant_id": "REST-1078",
-    "customer_id": "CUST-533",
-    "customer_name": "Dorothy Nelson",
-    "customer_tier": "Standard",
-    "review_text": "Fresh ingredients and creative plating make this place stand out. The tuna tartare was exquisite. My only complaint is the small portion sizes for the price. Left feeling hungry.",
-    "review_timestamp": "2026-02-12T19:30:00Z",
-    "source_platform": "tripadvisor"
+    "review_text": "Fresh ingredients and creative plating make this place stand out. The tuna tartare was exquisite. My only complaint is the small portion sizes for the price. Left feeling hungry."
   },
   {
     "review_id": "REV-034",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-534",
-    "customer_name": "Paul Carter",
-    "customer_tier": "Silver",
-    "review_text": "You people are threatening this neighborhood with your awful food. Someone should report this health hazard. I saw a rat near the dumpster. Disgusting place run by people who don't care.",
-    "review_timestamp": "2026-02-12T21:00:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "You people are threatening this neighborhood with your awful food. Someone should report this health hazard. I saw a rat near the dumpster. Disgusting place run by people who don't care."
   },
   {
     "review_id": "REV-035",
-    "restaurant_id": "REST-1055",
-    "customer_id": "CUST-535",
-    "customer_name": "Helen Mitchell",
-    "customer_tier": "Platinum",
-    "review_text": "The sommelier paired a beautiful Barolo with our osso buco — perfection. The pasta course was al dente and the sauce was rich without being heavy. A masterclass in Italian dining.",
-    "review_timestamp": "2026-02-11T19:30:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "The sommelier paired a beautiful Barolo with our osso buco \u2014 perfection. The pasta course was al dente and the sauce was rich without being heavy. A masterclass in Italian dining."
   },
   {
     "review_id": "REV-036",
-    "restaurant_id": "REST-1078",
-    "customer_id": "CUST-536",
-    "customer_name": "Frank Moore",
-    "customer_tier": "Standard",
-    "review_text": "Took my mother here for Mother's Day. Reservation confirmed but no table ready. Waited 30 min in a cramped lobby. Food eventually good but the whole experience was stressful. Mom deserved better.",
-    "review_timestamp": "2026-02-11T12:00:00Z",
-    "source_platform": "yelp"
+    "review_text": "Took my mother here for Mother's Day. Reservation confirmed but no table ready. Waited 30 min in a cramped lobby. Food eventually good but the whole experience was stressful. Mom deserved better."
   },
   {
     "review_id": "REV-037",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-537",
-    "customer_name": "Ruth Turner",
-    "customer_tier": "Gold",
-    "review_text": "Love the new cocktail menu! The spicy margarita with jalapeño-infused tequila was a revelation. Paired perfectly with the fish tacos. Bartender was talented and creative.",
-    "review_timestamp": "2026-02-10T18:00:00Z",
-    "source_platform": "tripadvisor"
+    "review_text": "Love the new cocktail menu! The spicy margarita with jalape\u00f1o-infused tequila was a revelation. Paired perfectly with the fish tacos. Bartender was talented and creative."
   },
   {
     "review_id": "REV-038",
-    "restaurant_id": "REST-1055",
-    "customer_id": "CUST-538",
-    "customer_name": "Edward Phillips",
-    "customer_tier": "Silver",
-    "review_text": "The damn food was cold again. This is the second time this month. Someone needs to fix whatever is going on in that kitchen. I like this place but I'm losing patience.",
-    "review_timestamp": "2026-02-10T20:00:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "The damn food was cold again. This is the second time this month. Someone needs to fix whatever is going on in that kitchen. I like this place but I'm losing patience."
   },
   {
     "review_id": "REV-039",
-    "restaurant_id": "REST-1078",
-    "customer_id": "CUST-539",
-    "customer_name": "Margaret Evans",
-    "customer_tier": "Platinum",
-    "review_text": "The private dining room was perfect for our corporate event. Staff handled 20 guests flawlessly. Custom menu was prepared with care. A/V setup worked without a hitch. Will book again for our quarterly events.",
-    "review_timestamp": "2026-02-09T19:00:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "The private dining room was perfect for our corporate event. Staff handled 20 guests flawlessly. Custom menu was prepared with care. A/V setup worked without a hitch. Will book again for our quarterly events."
   },
   {
     "review_id": "REV-040",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-540",
-    "customer_name": "Charles Reed",
-    "customer_tier": "Standard",
-    "review_text": "Overpriced for what you get. $28 for a basic chicken breast with wilted vegetables? The appetizer was better than the main. At least the bread basket was warm and fresh.",
-    "review_timestamp": "2026-02-09T19:30:00Z",
-    "source_platform": "yelp"
+    "review_text": "Overpriced for what you get. $28 for a basic chicken breast with wilted vegetables? The appetizer was better than the main. At least the bread basket was warm and fresh."
   },
   {
     "review_id": "REV-041",
-    "restaurant_id": "REST-1055",
-    "customer_id": "CUST-541",
-    "customer_name": "Virginia Cooper",
-    "customer_tier": "Gold",
-    "review_text": "Gluten-free options were clearly labeled on the menu — thank you! The GF pasta was actually good, not just edible. Waiter double-checked everything with the kitchen. Finally a restaurant that takes allergies seriously.",
-    "review_timestamp": "2026-02-08T13:00:00Z",
-    "source_platform": "tripadvisor"
+    "review_text": "Gluten-free options were clearly labeled on the menu \u2014 thank you! The GF pasta was actually good, not just edible. Waiter double-checked everything with the kitchen. Finally a restaurant that takes allergies seriously."
   },
   {
     "review_id": "REV-042",
-    "restaurant_id": "REST-1078",
-    "customer_id": "CUST-542",
-    "customer_name": "Joseph Morris",
-    "customer_tier": "Standard",
-    "review_text": "It was filthy in there. The table hadn't been wiped down, there were crumbs on the floor, and I spotted something questionable near the salad bar. Lost my appetite pretty quickly.",
-    "review_timestamp": "2026-02-08T18:30:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "It was filthy in there. The table hadn't been wiped down, there were crumbs on the floor, and I spotted something questionable near the salad bar. Lost my appetite pretty quickly."
   },
   {
     "review_id": "REV-043",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-543",
-    "customer_name": "Deborah Rogers",
-    "customer_tier": "Platinum",
-    "review_text": "Tried the new chef's tasting menu and it was a culinary journey. Seven courses, each more creative than the last. The deconstructed cheesecake finale was genius. Worth every penny.",
-    "review_timestamp": "2026-02-07T20:00:00Z",
-    "source_platform": "yelp"
+    "review_text": "Tried the new chef's tasting menu and it was a culinary journey. Seven courses, each more creative than the last. The deconstructed cheesecake finale was genius. Worth every penny."
   },
   {
     "review_id": "REV-044",
-    "restaurant_id": "REST-1055",
-    "customer_id": "CUST-544",
-    "customer_name": "William Stewart",
-    "customer_tier": "Silver",
-    "review_text": "Oh sure, the food was AMAZING. If you like paying $30 for a tiny plate that looks like modern art but tastes like nothing. The emperor has no clothes, people.",
-    "review_timestamp": "2026-02-07T19:00:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "Oh sure, the food was AMAZING. If you like paying $30 for a tiny plate that looks like modern art but tastes like nothing. The emperor has no clothes, people."
   },
   {
     "review_id": "REV-045",
-    "restaurant_id": "REST-1078",
-    "customer_id": "CUST-545",
-    "customer_name": "Barbara Sanchez",
-    "customer_tier": "Gold",
-    "review_text": "We had a wonderful time celebrating our engagement here. The manager surprised us with champagne on the house. The lamb was tender and flavorful, the crème brûlée was a perfect ending. Thank you for making our night memorable!",
-    "review_timestamp": "2026-02-06T20:30:00Z",
-    "source_platform": "tripadvisor"
+    "review_text": "We had a wonderful time celebrating our engagement here. The manager surprised us with champagne on the house. The lamb was tender and flavorful, the cr\u00e8me br\u00fbl\u00e9e was a perfect ending. Thank you for making our night memorable!"
   },
   {
     "review_id": "REV-046",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-546",
-    "customer_name": "Raymond Price",
-    "customer_tier": "Standard",
-    "review_text": "I asked for no onions THREE times. Guess what was all over my burger? Onions. When I sent it back, they just picked the onions off and returned the same burger. You could still taste them. Unbelievable.",
-    "review_timestamp": "2026-02-06T12:30:00Z",
-    "source_platform": "yelp"
+    "review_text": "I asked for no onions THREE times. Guess what was all over my burger? Onions. When I sent it back, they just picked the onions off and returned the same burger. You could still taste them. Unbelievable."
   },
   {
     "review_id": "REV-047",
-    "restaurant_id": "REST-1055",
-    "customer_id": "CUST-547",
-    "customer_name": "Catherine Bennett",
-    "customer_tier": "Platinum",
-    "review_text": "A hidden gem. The handmade gnocchi melts in your mouth. The truffle oil drizzle added such depth. Intimate setting with warm lighting and soft jazz. Service was attentive but not intrusive. Pure class.",
-    "review_timestamp": "2026-02-05T19:30:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "A hidden gem. The handmade gnocchi melts in your mouth. The truffle oil drizzle added such depth. Intimate setting with warm lighting and soft jazz. Service was attentive but not intrusive. Pure class."
   },
   {
     "review_id": "REV-048",
-    "restaurant_id": "REST-1078",
-    "customer_id": "CUST-548",
-    "customer_name": "Dennis Wood",
-    "customer_tier": "Silver",
-    "review_text": "Parking situation is a nightmare. Circled for 20 minutes. Once inside, things improved — the fried calamari was crispy and the garlic bread was heavenly. Wish they'd sort out the parking though.",
-    "review_timestamp": "2026-02-05T18:00:00Z",
-    "source_platform": "yelp"
+    "review_text": "Parking situation is a nightmare. Circled for 20 minutes. Once inside, things improved \u2014 the fried calamari was crispy and the garlic bread was heavenly. Wish they'd sort out the parking though."
   },
   {
     "review_id": "REV-049",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-549",
-    "customer_name": "Sharon Rivera",
-    "customer_tier": "Gold",
-    "review_text": "I'm still thinking about the chocolate lava cake from last night. The center was perfectly molten and the vanilla bean ice cream paired beautifully. The rest of the meal was solid too — grilled octopus appetizer was tender and smoky.",
-    "review_timestamp": "2026-02-04T20:30:00Z",
-    "source_platform": "tripadvisor"
+    "review_text": "I'm still thinking about the chocolate lava cake from last night. The center was perfectly molten and the vanilla bean ice cream paired beautifully. The rest of the meal was solid too \u2014 grilled octopus appetizer was tender and smoky."
   },
   {
     "review_id": "REV-050",
-    "restaurant_id": "REST-1055",
-    "customer_id": "CUST-550",
-    "customer_name": "Jerry Howard",
-    "customer_tier": "Standard",
-    "review_text": "Brought a large group for a birthday party and the staff couldn't handle it. Orders got mixed up, some people waited while others were already eating, and the bill was a mess with wrong charges. Stressful experience.",
-    "review_timestamp": "2026-02-04T19:00:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "Brought a large group for a birthday party and the staff couldn't handle it. Orders got mixed up, some people waited while others were already eating, and the bill was a mess with wrong charges. Stressful experience."
   },
   {
     "review_id": "REV-051",
-    "restaurant_id": "REST-1078",
-    "customer_id": "CUST-551",
-    "customer_name": "Angela Collins",
-    "customer_tier": "Platinum",
-    "review_text": "The rooftop dining area has breathtaking city views. Perfect sunset dinner spot. The grilled Mediterranean sea bass was fresh and expertly seasoned. Sangria was refreshing. A truly elevated dining experience.",
-    "review_timestamp": "2026-02-03T19:30:00Z",
-    "source_platform": "yelp"
+    "review_text": "The rooftop dining area has breathtaking city views. Perfect sunset dinner spot. The grilled Mediterranean sea bass was fresh and expertly seasoned. Sangria was refreshing. A truly elevated dining experience."
   },
   {
     "review_id": "REV-052",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-552",
-    "customer_name": "Peter Ward",
-    "customer_tier": "Gold",
-    "review_text": "Server was rude and condescending when I asked about ingredients for my allergy. Rolled her eyes and said 'it's all on the menu.' It's a safety issue, not a preference. Food was fine but I won't return because of the attitude.",
-    "review_timestamp": "2026-02-03T13:00:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "Server was rude and condescending when I asked about ingredients for my allergy. Rolled her eyes and said 'it's all on the menu.' It's a safety issue, not a preference. Food was fine but I won't return because of the attitude."
   },
   {
     "review_id": "REV-053",
-    "restaurant_id": "REST-1055",
-    "customer_id": "CUST-553",
-    "customer_name": "Diane Murphy",
-    "customer_tier": "Standard",
-    "review_text": "Quick lunch stop. Club sandwich was solid, soup of the day (tomato basil) was homemade and warming. Nothing fancy but reliably good. Fair prices for the area.",
-    "review_timestamp": "2026-02-02T12:00:00Z",
-    "source_platform": "tripadvisor"
+    "review_text": "Quick lunch stop. Club sandwich was solid, soup of the day (tomato basil) was homemade and warming. Nothing fancy but reliably good. Fair prices for the area."
   },
   {
     "review_id": "REV-054",
-    "restaurant_id": "REST-1078",
-    "customer_id": "CUST-554",
-    "customer_name": "Harold Cox",
-    "customer_tier": "Silver",
-    "review_text": "The AC wasn't working and it was sweltering inside. Fans blowing paper napkins everywhere. Staff apologized but didn't offer any compensation. The food was actually tasty but eating in a sauna killed the enjoyment.",
-    "review_timestamp": "2026-02-02T19:00:00Z",
-    "source_platform": "yelp"
+    "review_text": "The AC wasn't working and it was sweltering inside. Fans blowing paper napkins everywhere. Staff apologized but didn't offer any compensation. The food was actually tasty but eating in a sauna killed the enjoyment."
   },
   {
     "review_id": "REV-055",
-    "restaurant_id": "REST-1042",
-    "customer_id": "CUST-555",
-    "customer_name": "Joyce Peterson",
-    "customer_tier": "Platinum",
-    "review_text": "Our anniversary dinner was absolutely perfect. The staff remembered our names from our reservation. The filet mignon was cooked exactly to medium-rare as requested. The candlelit table by the window was romantic and private. Thank you for a wonderful evening.",
-    "review_timestamp": "2026-02-01T20:00:00Z",
-    "source_platform": "google_reviews"
+    "review_text": "Our anniversary dinner was absolutely perfect. The staff remembered our names from our reservation. The filet mignon was cooked exactly to medium-rare as requested. The candlelit table by the window was romantic and private. Thank you for a wonderful evening."
   }
 ]

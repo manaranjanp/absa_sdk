@@ -89,8 +89,7 @@ async def run_pipeline(
     """Execute the ABSA pipeline for a single review.
 
     Args:
-        review: Review dict with review_id, restaurant_id, customer_id,
-                review_text, review_timestamp, source_platform.
+        review: Review dict with review_id and review_text.
         model_name: LiteLLM model string for the pipeline.
         pipeline: Optional pre-created pipeline (reuse across reviews).
         session_service: Optional pre-created session service.
@@ -124,8 +123,6 @@ async def run_pipeline(
 
     print(f"\n{'='*60}")
     print(f"  Processing Review: {review_id}")
-    print(f"  Restaurant: {review.get('restaurant_id', 'N/A')}")
-    print(f"  Customer: {review.get('customer_name', review.get('customer_id', 'N/A'))}")
     print(f"{'='*60}")
 
     # Run the pipeline
@@ -220,9 +217,8 @@ def _print_summary(output: dict):
     tox = output.get("toxicity_result", {})
     is_toxic = tox.get("is_toxic", False)
     tox_score = tox.get("toxicity_score", "N/A")
-    action = tox.get("pipeline_action", "UNKNOWN")
     status = "TOXIC — Pipeline terminated" if is_toxic else "Clean"
-    print(f"  Toxicity:    {status} (score: {tox_score}, action: {action})")
+    print(f"  Toxicity:    {status} (score: {tox_score})")
 
     if is_toxic:
         print(f"{'─'*60}\n")

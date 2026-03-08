@@ -1,80 +1,43 @@
-"""
-Policy Evaluation & Escalation Agent (Stage 4)
--------------------------------------------------
-Evaluates sentiment results against simple threshold rules.
-Creates escalation tickets for eligible customers based on their tier.
-"""
+"""Policy Evaluation & Escalation Agent (Stage 4)"""
 
 from google.adk.agents import LlmAgent
 from agents.escalation_tools import create_escalation_ticket
 
 
-POLICY_ESCALATION_INSTRUCTION = """You are the Policy Evaluation & Escalation Agent in a restaurant review processing pipeline.
+POLICY_ESCALATION_INSTRUCTION = """Evaluate sentiment results and create escalation tickets when the score is negative.
 
-## Your Task
-Evaluate the sentiment results against the rules below.
-Raise notifications when thresholds are breached and create escalation tickets
-for eligible customers based on their loyalty tier.
-
-## Prerequisite
-Check the toxicity result: {toxicity_result}
-If pipeline_action is "TERMINATE", respond with:
-{{"notifications": [], "escalation_ticket": null, "pipeline_action": "TERMINATE"}}
-
-## Input
+Input:
 - Review metadata: {review_input}
 - Sentiment results: {sentiment_result}
 
-## Notification Rules
-If any aspect has a sentiment_score below -0.5, raise a notification for that aspect.
+## Rule
+Call the `create_escalation_ticket` tool ONLY if overall_sentiment_score < -0.3.
 
-## Escalation Rules
-Determine customer tier from review metadata (customer_tier field).
-Apply the matching tier rule:
-- Platinum: Any negative aspect → HIGH priority, 4h SLA
-- Gold: Overall sentiment NEGATIVE or worse → MEDIUM priority, 24h SLA
-- Silver: Overall sentiment VERY_NEGATIVE → LOW priority, 48h SLA
-- Standard: No ticket
+Use priority="HIGH" and sla_hours=4 if score < -0.6, otherwise priority="MEDIUM" and sla_hours=24.
 
-If escalation is needed, call `create_escalation_ticket` with the required parameters.
+Do NOT call the tool if overall_sentiment_score >= -0.3.
 
-## Output Format
-Respond with ONLY a valid JSON object:
+After deciding, respond with ONLY this JSON:
 {{
-  "notifications": [
-    {{
-      "aspect_code": "SERVICE",
-      "sentiment_score": -0.7,
-      "message": "Sentiment score below threshold for SERVICE"
-    }}
-  ],
   "escalation_ticket": {{
-    "ticket_id": 1,
-    "action": "CREATED",
     "priority": "HIGH",
     "sla_hours": 4
-  }},
-  "pipeline_action": "CONTINUE"
+  }}
 }}
 
-If no escalation needed, set "escalation_ticket": null.
+If no escalation needed:
+{{
+  "escalation_ticket": null
+}}
 """
 
 
 def create_policy_escalation_agent(model) -> LlmAgent:
-    """Create the Policy Evaluation & Escalation Agent.
-
-    Args:
-        model: LiteLlm model instance for LLM calls.
-
-    Returns:
-        Configured LlmAgent with escalation tool.
-    """
     return LlmAgent(
         name="policy_escalation_agent",
         model=model,
         instruction=POLICY_ESCALATION_INSTRUCTION,
-        description="Evaluates policies, fires alerts, and creates escalation tickets",
+        description="Creates escalation tickets based on sentiment thresholds and customer tier",
         tools=[create_escalation_ticket],
-        output_key="escalation_result"
+        output_key="escalation_result",
     )
